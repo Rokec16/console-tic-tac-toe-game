@@ -7,6 +7,9 @@ class TicTacToe():
         self.player = 0
         self.board = [' ' for _ in range(10)]
 
+    def __str__(self):
+        return 'Welcome to Console Tic Tac Toe!'
+
     def reset_board(self):
         '''Create an empty playing board.'''
         self.board = [' ' for _ in range(10)]
@@ -72,6 +75,8 @@ class TicTacToe():
 
 def main():
     game = TicTacToe()
+
+    print(game)
 
     while not game.game_over:
 
